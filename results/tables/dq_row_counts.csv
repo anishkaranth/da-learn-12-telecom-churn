@@ -1,0 +1,11 @@
+entity,raw_rows,distinct_keys,clean_rows,grain
+customers,7043,7043,7043,customer_id
+dim_contract,,3,3,contract type
+dim_customer,,,7043,customer_id
+dim_demographics,,,16,gender x senior x partner x dependents
+dim_payment,,4,4,payment method
+dim_service,,,10,service line
+dim_services,,,322,distinct service bundle
+dim_tenure_band,,,7,tenure band
+fact_service,,,29202,customer x subscribed service line
+fact_subscription,,,7043,customer (current subscription snapshot)

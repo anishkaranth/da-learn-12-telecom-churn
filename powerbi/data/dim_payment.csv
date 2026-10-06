@@ -1,0 +1,5 @@
+payment_key,payment_method,is_auto_pay,payment_channel
+1,Bank transfer (automatic),1,Bank
+2,Credit card (automatic),1,Card
+3,Electronic check,0,Check
+4,Mailed check,0,Check

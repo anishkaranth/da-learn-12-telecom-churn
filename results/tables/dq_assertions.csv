@@ -1,0 +1,28 @@
+check_name,failed_rows,status
+>25% charge gaps (dq_charges_mismatch) only in the first year (tenure <= 12),0.0,PASS
+MRR reconciles raw -> fact (abs diff < 0.01),0.0,PASS
+SeniorCitizen is 0/1 and gender Female/Male,0.0,PASS
+TotalCharges within 8 x MonthlyCharges of MonthlyCharges x tenure (price-drift tolerance),0.0,PASS
+addon_count = sum of the 6 add-on flags (0-6),0.0,PASS
+blank TotalCharges only where tenure = 0,0.0,PASS
+churned count reconciles raw Churn = Yes,0.0,PASS
+clean rows = distinct raw customer ids (nothing lost),0.0,PASS
+contract / payment / internet values in the expected sets,0.0,PASS
+customer_id format NNNN-XXXXX,0.0,PASS
+customer_id unique in cln_customers,0.0,PASS
+every Yes/No column mapped to 0/1 (no NULL flags),0.0,PASS
+every customer has phone or internet,0.0,PASS
+every tenure-0 customer had a blank TotalCharges,0.0,PASS
+fact_service rows = sum of subscribed flags,0.0,PASS
+"fact_service.customer_id -> dim_customer, service -> dim_service",0.0,PASS
+"fact_subscription keys -> dims (contract, payment, demographics, services, tenure band)",0.0,PASS
+fact_subscription rows = cln_customers rows (every dim join matched),0.0,PASS
+lifetime revenue reconciles raw -> fact (abs diff < 0.01),0.0,PASS
+mrr_lost + mrr_retained = monthly_charges,0.0,PASS
+no NULL total_charges after cleaning,0.0,PASS
+no internet => all 6 add-on flags 0 and raw add-ons say 'No internet service',0.0,PASS
+no phone => MultipleLines 'No phone service' and has_multiple_lines 0,0.0,PASS
+"segment totals reconcile (contract, tenure band, payment, internet)",0.0,PASS
+"tenure 0-72 months, MonthlyCharges 18-120",0.0,PASS
+tenure 1: TotalCharges = MonthlyCharges,0.0,PASS
+tenure bands cover 0-72 without overlap,0.0,PASS

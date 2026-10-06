@@ -1,0 +1,323 @@
+services_key,has_phone,has_multiple_lines,multiple_lines_label,internet_service,has_internet,service_profile,has_online_security,has_online_backup,has_device_protection,has_tech_support,has_streaming_tv,has_streaming_movies,protection_addons,streaming_addons,addon_count
+1,0,0,No phone service,DSL,1,Internet only,0,0,0,0,0,0,0,0,0
+2,0,0,No phone service,DSL,1,Internet only,0,0,0,0,0,1,0,1,1
+3,0,0,No phone service,DSL,1,Internet only,0,0,0,0,1,0,0,1,1
+4,0,0,No phone service,DSL,1,Internet only,0,0,0,0,1,1,0,2,2
+5,0,0,No phone service,DSL,1,Internet only,0,0,0,1,0,0,1,0,1
+6,0,0,No phone service,DSL,1,Internet only,0,0,0,1,0,1,1,1,2
+7,0,0,No phone service,DSL,1,Internet only,0,0,0,1,1,0,1,1,2
+8,0,0,No phone service,DSL,1,Internet only,0,0,0,1,1,1,1,2,3
+9,0,0,No phone service,DSL,1,Internet only,0,0,1,0,0,0,1,0,1
+10,0,0,No phone service,DSL,1,Internet only,0,0,1,0,0,1,1,1,2
+11,0,0,No phone service,DSL,1,Internet only,0,0,1,0,1,0,1,1,2
+12,0,0,No phone service,DSL,1,Internet only,0,0,1,0,1,1,1,2,3
+13,0,0,No phone service,DSL,1,Internet only,0,0,1,1,0,0,2,0,2
+14,0,0,No phone service,DSL,1,Internet only,0,0,1,1,0,1,2,1,3
+15,0,0,No phone service,DSL,1,Internet only,0,0,1,1,1,0,2,1,3
+16,0,0,No phone service,DSL,1,Internet only,0,0,1,1,1,1,2,2,4
+17,0,0,No phone service,DSL,1,Internet only,0,1,0,0,0,0,1,0,1
+18,0,0,No phone service,DSL,1,Internet only,0,1,0,0,0,1,1,1,2
+19,0,0,No phone service,DSL,1,Internet only,0,1,0,0,1,0,1,1,2
+20,0,0,No phone service,DSL,1,Internet only,0,1,0,0,1,1,1,2,3
+21,0,0,No phone service,DSL,1,Internet only,0,1,0,1,0,0,2,0,2
+22,0,0,No phone service,DSL,1,Internet only,0,1,0,1,0,1,2,1,3
+23,0,0,No phone service,DSL,1,Internet only,0,1,0,1,1,0,2,1,3
+24,0,0,No phone service,DSL,1,Internet only,0,1,0,1,1,1,2,2,4
+25,0,0,No phone service,DSL,1,Internet only,0,1,1,0,0,0,2,0,2
+26,0,0,No phone service,DSL,1,Internet only,0,1,1,0,0,1,2,1,3
+27,0,0,No phone service,DSL,1,Internet only,0,1,1,0,1,0,2,1,3
+28,0,0,No phone service,DSL,1,Internet only,0,1,1,0,1,1,2,2,4
+29,0,0,No phone service,DSL,1,Internet only,0,1,1,1,0,0,3,0,3
+30,0,0,No phone service,DSL,1,Internet only,0,1,1,1,0,1,3,1,4
+31,0,0,No phone service,DSL,1,Internet only,0,1,1,1,1,0,3,1,4
+32,0,0,No phone service,DSL,1,Internet only,0,1,1,1,1,1,3,2,5
+33,0,0,No phone service,DSL,1,Internet only,1,0,0,0,0,0,1,0,1
+34,0,0,No phone service,DSL,1,Internet only,1,0,0,0,0,1,1,1,2
+35,0,0,No phone service,DSL,1,Internet only,1,0,0,0,1,0,1,1,2
+36,0,0,No phone service,DSL,1,Internet only,1,0,0,0,1,1,1,2,3
+37,0,0,No phone service,DSL,1,Internet only,1,0,0,1,0,0,2,0,2
+38,0,0,No phone service,DSL,1,Internet only,1,0,0,1,0,1,2,1,3
+39,0,0,No phone service,DSL,1,Internet only,1,0,0,1,1,0,2,1,3
+40,0,0,No phone service,DSL,1,Internet only,1,0,0,1,1,1,2,2,4
+41,0,0,No phone service,DSL,1,Internet only,1,0,1,0,0,0,2,0,2
+42,0,0,No phone service,DSL,1,Internet only,1,0,1,0,0,1,2,1,3
+43,0,0,No phone service,DSL,1,Internet only,1,0,1,0,1,0,2,1,3
+44,0,0,No phone service,DSL,1,Internet only,1,0,1,0,1,1,2,2,4
+45,0,0,No phone service,DSL,1,Internet only,1,0,1,1,0,0,3,0,3
+46,0,0,No phone service,DSL,1,Internet only,1,0,1,1,0,1,3,1,4
+47,0,0,No phone service,DSL,1,Internet only,1,0,1,1,1,0,3,1,4
+48,0,0,No phone service,DSL,1,Internet only,1,0,1,1,1,1,3,2,5
+49,0,0,No phone service,DSL,1,Internet only,1,1,0,0,0,0,2,0,2
+50,0,0,No phone service,DSL,1,Internet only,1,1,0,0,0,1,2,1,3
+51,0,0,No phone service,DSL,1,Internet only,1,1,0,0,1,0,2,1,3
+52,0,0,No phone service,DSL,1,Internet only,1,1,0,0,1,1,2,2,4
+53,0,0,No phone service,DSL,1,Internet only,1,1,0,1,0,0,3,0,3
+54,0,0,No phone service,DSL,1,Internet only,1,1,0,1,0,1,3,1,4
+55,0,0,No phone service,DSL,1,Internet only,1,1,0,1,1,0,3,1,4
+56,0,0,No phone service,DSL,1,Internet only,1,1,0,1,1,1,3,2,5
+57,0,0,No phone service,DSL,1,Internet only,1,1,1,0,0,0,3,0,3
+58,0,0,No phone service,DSL,1,Internet only,1,1,1,0,0,1,3,1,4
+59,0,0,No phone service,DSL,1,Internet only,1,1,1,0,1,0,3,1,4
+60,0,0,No phone service,DSL,1,Internet only,1,1,1,0,1,1,3,2,5
+61,0,0,No phone service,DSL,1,Internet only,1,1,1,1,0,0,4,0,4
+62,0,0,No phone service,DSL,1,Internet only,1,1,1,1,0,1,4,1,5
+63,0,0,No phone service,DSL,1,Internet only,1,1,1,1,1,0,4,1,5
+64,0,0,No phone service,DSL,1,Internet only,1,1,1,1,1,1,4,2,6
+65,1,0,No,DSL,1,Phone + Internet,0,0,0,0,0,0,0,0,0
+66,1,0,No,DSL,1,Phone + Internet,0,0,0,0,0,1,0,1,1
+67,1,0,No,DSL,1,Phone + Internet,0,0,0,0,1,0,0,1,1
+68,1,0,No,DSL,1,Phone + Internet,0,0,0,0,1,1,0,2,2
+69,1,0,No,DSL,1,Phone + Internet,0,0,0,1,0,0,1,0,1
+70,1,0,No,DSL,1,Phone + Internet,0,0,0,1,0,1,1,1,2
+71,1,0,No,DSL,1,Phone + Internet,0,0,0,1,1,0,1,1,2
+72,1,0,No,DSL,1,Phone + Internet,0,0,0,1,1,1,1,2,3
+73,1,0,No,DSL,1,Phone + Internet,0,0,1,0,0,0,1,0,1
+74,1,0,No,DSL,1,Phone + Internet,0,0,1,0,0,1,1,1,2
+75,1,0,No,DSL,1,Phone + Internet,0,0,1,0,1,0,1,1,2
+76,1,0,No,DSL,1,Phone + Internet,0,0,1,0,1,1,1,2,3
+77,1,0,No,DSL,1,Phone + Internet,0,0,1,1,0,0,2,0,2
+78,1,0,No,DSL,1,Phone + Internet,0,0,1,1,0,1,2,1,3
+79,1,0,No,DSL,1,Phone + Internet,0,0,1,1,1,0,2,1,3
+80,1,0,No,DSL,1,Phone + Internet,0,0,1,1,1,1,2,2,4
+81,1,0,No,DSL,1,Phone + Internet,0,1,0,0,0,0,1,0,1
+82,1,0,No,DSL,1,Phone + Internet,0,1,0,0,0,1,1,1,2
+83,1,0,No,DSL,1,Phone + Internet,0,1,0,0,1,0,1,1,2
+84,1,0,No,DSL,1,Phone + Internet,0,1,0,0,1,1,1,2,3
+85,1,0,No,DSL,1,Phone + Internet,0,1,0,1,0,0,2,0,2
+86,1,0,No,DSL,1,Phone + Internet,0,1,0,1,0,1,2,1,3
+87,1,0,No,DSL,1,Phone + Internet,0,1,0,1,1,0,2,1,3
+88,1,0,No,DSL,1,Phone + Internet,0,1,0,1,1,1,2,2,4
+89,1,0,No,DSL,1,Phone + Internet,0,1,1,0,0,0,2,0,2
+90,1,0,No,DSL,1,Phone + Internet,0,1,1,0,0,1,2,1,3
+91,1,0,No,DSL,1,Phone + Internet,0,1,1,0,1,0,2,1,3
+92,1,0,No,DSL,1,Phone + Internet,0,1,1,0,1,1,2,2,4
+93,1,0,No,DSL,1,Phone + Internet,0,1,1,1,0,0,3,0,3
+94,1,0,No,DSL,1,Phone + Internet,0,1,1,1,0,1,3,1,4
+95,1,0,No,DSL,1,Phone + Internet,0,1,1,1,1,0,3,1,4
+96,1,0,No,DSL,1,Phone + Internet,0,1,1,1,1,1,3,2,5
+97,1,0,No,DSL,1,Phone + Internet,1,0,0,0,0,0,1,0,1
+98,1,0,No,DSL,1,Phone + Internet,1,0,0,0,0,1,1,1,2
+99,1,0,No,DSL,1,Phone + Internet,1,0,0,0,1,0,1,1,2
+100,1,0,No,DSL,1,Phone + Internet,1,0,0,0,1,1,1,2,3
+101,1,0,No,DSL,1,Phone + Internet,1,0,0,1,0,0,2,0,2
+102,1,0,No,DSL,1,Phone + Internet,1,0,0,1,0,1,2,1,3
+103,1,0,No,DSL,1,Phone + Internet,1,0,0,1,1,0,2,1,3
+104,1,0,No,DSL,1,Phone + Internet,1,0,0,1,1,1,2,2,4
+105,1,0,No,DSL,1,Phone + Internet,1,0,1,0,0,0,2,0,2
+106,1,0,No,DSL,1,Phone + Internet,1,0,1,0,0,1,2,1,3
+107,1,0,No,DSL,1,Phone + Internet,1,0,1,0,1,0,2,1,3
+108,1,0,No,DSL,1,Phone + Internet,1,0,1,0,1,1,2,2,4
+109,1,0,No,DSL,1,Phone + Internet,1,0,1,1,0,0,3,0,3
+110,1,0,No,DSL,1,Phone + Internet,1,0,1,1,0,1,3,1,4
+111,1,0,No,DSL,1,Phone + Internet,1,0,1,1,1,0,3,1,4
+112,1,0,No,DSL,1,Phone + Internet,1,0,1,1,1,1,3,2,5
+113,1,0,No,DSL,1,Phone + Internet,1,1,0,0,0,0,2,0,2
+114,1,0,No,DSL,1,Phone + Internet,1,1,0,0,0,1,2,1,3
+115,1,0,No,DSL,1,Phone + Internet,1,1,0,0,1,0,2,1,3
+116,1,0,No,DSL,1,Phone + Internet,1,1,0,0,1,1,2,2,4
+117,1,0,No,DSL,1,Phone + Internet,1,1,0,1,0,0,3,0,3
+118,1,0,No,DSL,1,Phone + Internet,1,1,0,1,0,1,3,1,4
+119,1,0,No,DSL,1,Phone + Internet,1,1,0,1,1,0,3,1,4
+120,1,0,No,DSL,1,Phone + Internet,1,1,0,1,1,1,3,2,5
+121,1,0,No,DSL,1,Phone + Internet,1,1,1,0,0,0,3,0,3
+122,1,0,No,DSL,1,Phone + Internet,1,1,1,0,0,1,3,1,4
+123,1,0,No,DSL,1,Phone + Internet,1,1,1,0,1,0,3,1,4
+124,1,0,No,DSL,1,Phone + Internet,1,1,1,0,1,1,3,2,5
+125,1,0,No,DSL,1,Phone + Internet,1,1,1,1,0,0,4,0,4
+126,1,0,No,DSL,1,Phone + Internet,1,1,1,1,0,1,4,1,5
+127,1,0,No,DSL,1,Phone + Internet,1,1,1,1,1,0,4,1,5
+128,1,0,No,DSL,1,Phone + Internet,1,1,1,1,1,1,4,2,6
+129,1,0,No,Fiber optic,1,Phone + Internet,0,0,0,0,0,0,0,0,0
+130,1,0,No,Fiber optic,1,Phone + Internet,0,0,0,0,0,1,0,1,1
+131,1,0,No,Fiber optic,1,Phone + Internet,0,0,0,0,1,0,0,1,1
+132,1,0,No,Fiber optic,1,Phone + Internet,0,0,0,0,1,1,0,2,2
+133,1,0,No,Fiber optic,1,Phone + Internet,0,0,0,1,0,0,1,0,1
+134,1,0,No,Fiber optic,1,Phone + Internet,0,0,0,1,0,1,1,1,2
+135,1,0,No,Fiber optic,1,Phone + Internet,0,0,0,1,1,0,1,1,2
+136,1,0,No,Fiber optic,1,Phone + Internet,0,0,0,1,1,1,1,2,3
+137,1,0,No,Fiber optic,1,Phone + Internet,0,0,1,0,0,0,1,0,1
+138,1,0,No,Fiber optic,1,Phone + Internet,0,0,1,0,0,1,1,1,2
+139,1,0,No,Fiber optic,1,Phone + Internet,0,0,1,0,1,0,1,1,2
+140,1,0,No,Fiber optic,1,Phone + Internet,0,0,1,0,1,1,1,2,3
+141,1,0,No,Fiber optic,1,Phone + Internet,0,0,1,1,0,0,2,0,2
+142,1,0,No,Fiber optic,1,Phone + Internet,0,0,1,1,0,1,2,1,3
+143,1,0,No,Fiber optic,1,Phone + Internet,0,0,1,1,1,0,2,1,3
+144,1,0,No,Fiber optic,1,Phone + Internet,0,0,1,1,1,1,2,2,4
+145,1,0,No,Fiber optic,1,Phone + Internet,0,1,0,0,0,0,1,0,1
+146,1,0,No,Fiber optic,1,Phone + Internet,0,1,0,0,0,1,1,1,2
+147,1,0,No,Fiber optic,1,Phone + Internet,0,1,0,0,1,0,1,1,2
+148,1,0,No,Fiber optic,1,Phone + Internet,0,1,0,0,1,1,1,2,3
+149,1,0,No,Fiber optic,1,Phone + Internet,0,1,0,1,0,0,2,0,2
+150,1,0,No,Fiber optic,1,Phone + Internet,0,1,0,1,0,1,2,1,3
+151,1,0,No,Fiber optic,1,Phone + Internet,0,1,0,1,1,0,2,1,3
+152,1,0,No,Fiber optic,1,Phone + Internet,0,1,0,1,1,1,2,2,4
+153,1,0,No,Fiber optic,1,Phone + Internet,0,1,1,0,0,0,2,0,2
+154,1,0,No,Fiber optic,1,Phone + Internet,0,1,1,0,0,1,2,1,3
+155,1,0,No,Fiber optic,1,Phone + Internet,0,1,1,0,1,0,2,1,3
+156,1,0,No,Fiber optic,1,Phone + Internet,0,1,1,0,1,1,2,2,4
+157,1,0,No,Fiber optic,1,Phone + Internet,0,1,1,1,0,0,3,0,3
+158,1,0,No,Fiber optic,1,Phone + Internet,0,1,1,1,0,1,3,1,4
+159,1,0,No,Fiber optic,1,Phone + Internet,0,1,1,1,1,0,3,1,4
+160,1,0,No,Fiber optic,1,Phone + Internet,0,1,1,1,1,1,3,2,5
+161,1,0,No,Fiber optic,1,Phone + Internet,1,0,0,0,0,0,1,0,1
+162,1,0,No,Fiber optic,1,Phone + Internet,1,0,0,0,0,1,1,1,2
+163,1,0,No,Fiber optic,1,Phone + Internet,1,0,0,0,1,0,1,1,2
+164,1,0,No,Fiber optic,1,Phone + Internet,1,0,0,0,1,1,1,2,3
+165,1,0,No,Fiber optic,1,Phone + Internet,1,0,0,1,0,0,2,0,2
+166,1,0,No,Fiber optic,1,Phone + Internet,1,0,0,1,0,1,2,1,3
+167,1,0,No,Fiber optic,1,Phone + Internet,1,0,0,1,1,0,2,1,3
+168,1,0,No,Fiber optic,1,Phone + Internet,1,0,0,1,1,1,2,2,4
+169,1,0,No,Fiber optic,1,Phone + Internet,1,0,1,0,0,0,2,0,2
+170,1,0,No,Fiber optic,1,Phone + Internet,1,0,1,0,0,1,2,1,3
+171,1,0,No,Fiber optic,1,Phone + Internet,1,0,1,0,1,0,2,1,3
+172,1,0,No,Fiber optic,1,Phone + Internet,1,0,1,0,1,1,2,2,4
+173,1,0,No,Fiber optic,1,Phone + Internet,1,0,1,1,0,0,3,0,3
+174,1,0,No,Fiber optic,1,Phone + Internet,1,0,1,1,0,1,3,1,4
+175,1,0,No,Fiber optic,1,Phone + Internet,1,0,1,1,1,0,3,1,4
+176,1,0,No,Fiber optic,1,Phone + Internet,1,0,1,1,1,1,3,2,5
+177,1,0,No,Fiber optic,1,Phone + Internet,1,1,0,0,0,0,2,0,2
+178,1,0,No,Fiber optic,1,Phone + Internet,1,1,0,0,0,1,2,1,3
+179,1,0,No,Fiber optic,1,Phone + Internet,1,1,0,0,1,0,2,1,3
+180,1,0,No,Fiber optic,1,Phone + Internet,1,1,0,0,1,1,2,2,4
+181,1,0,No,Fiber optic,1,Phone + Internet,1,1,0,1,0,0,3,0,3
+182,1,0,No,Fiber optic,1,Phone + Internet,1,1,0,1,0,1,3,1,4
+183,1,0,No,Fiber optic,1,Phone + Internet,1,1,0,1,1,0,3,1,4
+184,1,0,No,Fiber optic,1,Phone + Internet,1,1,0,1,1,1,3,2,5
+185,1,0,No,Fiber optic,1,Phone + Internet,1,1,1,0,0,0,3,0,3
+186,1,0,No,Fiber optic,1,Phone + Internet,1,1,1,0,0,1,3,1,4
+187,1,0,No,Fiber optic,1,Phone + Internet,1,1,1,0,1,0,3,1,4
+188,1,0,No,Fiber optic,1,Phone + Internet,1,1,1,0,1,1,3,2,5
+189,1,0,No,Fiber optic,1,Phone + Internet,1,1,1,1,0,0,4,0,4
+190,1,0,No,Fiber optic,1,Phone + Internet,1,1,1,1,0,1,4,1,5
+191,1,0,No,Fiber optic,1,Phone + Internet,1,1,1,1,1,0,4,1,5
+192,1,0,No,Fiber optic,1,Phone + Internet,1,1,1,1,1,1,4,2,6
+193,1,0,No,None,0,Phone only,0,0,0,0,0,0,0,0,0
+194,1,1,Yes,DSL,1,Phone + Internet,0,0,0,0,0,0,0,0,0
+195,1,1,Yes,DSL,1,Phone + Internet,0,0,0,0,0,1,0,1,1
+196,1,1,Yes,DSL,1,Phone + Internet,0,0,0,0,1,0,0,1,1
+197,1,1,Yes,DSL,1,Phone + Internet,0,0,0,0,1,1,0,2,2
+198,1,1,Yes,DSL,1,Phone + Internet,0,0,0,1,0,0,1,0,1
+199,1,1,Yes,DSL,1,Phone + Internet,0,0,0,1,0,1,1,1,2
+200,1,1,Yes,DSL,1,Phone + Internet,0,0,0,1,1,0,1,1,2
+201,1,1,Yes,DSL,1,Phone + Internet,0,0,0,1,1,1,1,2,3
+202,1,1,Yes,DSL,1,Phone + Internet,0,0,1,0,0,0,1,0,1
+203,1,1,Yes,DSL,1,Phone + Internet,0,0,1,0,0,1,1,1,2
+204,1,1,Yes,DSL,1,Phone + Internet,0,0,1,0,1,0,1,1,2
+205,1,1,Yes,DSL,1,Phone + Internet,0,0,1,0,1,1,1,2,3
+206,1,1,Yes,DSL,1,Phone + Internet,0,0,1,1,0,0,2,0,2
+207,1,1,Yes,DSL,1,Phone + Internet,0,0,1,1,0,1,2,1,3
+208,1,1,Yes,DSL,1,Phone + Internet,0,0,1,1,1,0,2,1,3
+209,1,1,Yes,DSL,1,Phone + Internet,0,0,1,1,1,1,2,2,4
+210,1,1,Yes,DSL,1,Phone + Internet,0,1,0,0,0,0,1,0,1
+211,1,1,Yes,DSL,1,Phone + Internet,0,1,0,0,0,1,1,1,2
+212,1,1,Yes,DSL,1,Phone + Internet,0,1,0,0,1,0,1,1,2
+213,1,1,Yes,DSL,1,Phone + Internet,0,1,0,0,1,1,1,2,3
+214,1,1,Yes,DSL,1,Phone + Internet,0,1,0,1,0,0,2,0,2
+215,1,1,Yes,DSL,1,Phone + Internet,0,1,0,1,0,1,2,1,3
+216,1,1,Yes,DSL,1,Phone + Internet,0,1,0,1,1,0,2,1,3
+217,1,1,Yes,DSL,1,Phone + Internet,0,1,0,1,1,1,2,2,4
+218,1,1,Yes,DSL,1,Phone + Internet,0,1,1,0,0,0,2,0,2
+219,1,1,Yes,DSL,1,Phone + Internet,0,1,1,0,0,1,2,1,3
+220,1,1,Yes,DSL,1,Phone + Internet,0,1,1,0,1,0,2,1,3
+221,1,1,Yes,DSL,1,Phone + Internet,0,1,1,0,1,1,2,2,4
+222,1,1,Yes,DSL,1,Phone + Internet,0,1,1,1,0,0,3,0,3
+223,1,1,Yes,DSL,1,Phone + Internet,0,1,1,1,0,1,3,1,4
+224,1,1,Yes,DSL,1,Phone + Internet,0,1,1,1,1,0,3,1,4
+225,1,1,Yes,DSL,1,Phone + Internet,0,1,1,1,1,1,3,2,5
+226,1,1,Yes,DSL,1,Phone + Internet,1,0,0,0,0,0,1,0,1
+227,1,1,Yes,DSL,1,Phone + Internet,1,0,0,0,0,1,1,1,2
+228,1,1,Yes,DSL,1,Phone + Internet,1,0,0,0,1,0,1,1,2
+229,1,1,Yes,DSL,1,Phone + Internet,1,0,0,0,1,1,1,2,3
+230,1,1,Yes,DSL,1,Phone + Internet,1,0,0,1,0,0,2,0,2
+231,1,1,Yes,DSL,1,Phone + Internet,1,0,0,1,0,1,2,1,3
+232,1,1,Yes,DSL,1,Phone + Internet,1,0,0,1,1,0,2,1,3
+233,1,1,Yes,DSL,1,Phone + Internet,1,0,0,1,1,1,2,2,4
+234,1,1,Yes,DSL,1,Phone + Internet,1,0,1,0,0,0,2,0,2
+235,1,1,Yes,DSL,1,Phone + Internet,1,0,1,0,0,1,2,1,3
+236,1,1,Yes,DSL,1,Phone + Internet,1,0,1,0,1,0,2,1,3
+237,1,1,Yes,DSL,1,Phone + Internet,1,0,1,0,1,1,2,2,4
+238,1,1,Yes,DSL,1,Phone + Internet,1,0,1,1,0,0,3,0,3
+239,1,1,Yes,DSL,1,Phone + Internet,1,0,1,1,0,1,3,1,4
+240,1,1,Yes,DSL,1,Phone + Internet,1,0,1,1,1,0,3,1,4
+241,1,1,Yes,DSL,1,Phone + Internet,1,0,1,1,1,1,3,2,5
+242,1,1,Yes,DSL,1,Phone + Internet,1,1,0,0,0,0,2,0,2
+243,1,1,Yes,DSL,1,Phone + Internet,1,1,0,0,0,1,2,1,3
+244,1,1,Yes,DSL,1,Phone + Internet,1,1,0,0,1,0,2,1,3
+245,1,1,Yes,DSL,1,Phone + Internet,1,1,0,0,1,1,2,2,4
+246,1,1,Yes,DSL,1,Phone + Internet,1,1,0,1,0,0,3,0,3
+247,1,1,Yes,DSL,1,Phone + Internet,1,1,0,1,0,1,3,1,4
+248,1,1,Yes,DSL,1,Phone + Internet,1,1,0,1,1,0,3,1,4
+249,1,1,Yes,DSL,1,Phone + Internet,1,1,0,1,1,1,3,2,5
+250,1,1,Yes,DSL,1,Phone + Internet,1,1,1,0,0,0,3,0,3
+251,1,1,Yes,DSL,1,Phone + Internet,1,1,1,0,0,1,3,1,4
+252,1,1,Yes,DSL,1,Phone + Internet,1,1,1,0,1,0,3,1,4
+253,1,1,Yes,DSL,1,Phone + Internet,1,1,1,0,1,1,3,2,5
+254,1,1,Yes,DSL,1,Phone + Internet,1,1,1,1,0,0,4,0,4
+255,1,1,Yes,DSL,1,Phone + Internet,1,1,1,1,0,1,4,1,5
+256,1,1,Yes,DSL,1,Phone + Internet,1,1,1,1,1,0,4,1,5
+257,1,1,Yes,DSL,1,Phone + Internet,1,1,1,1,1,1,4,2,6
+258,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,0,0,0,0,0,0,0
+259,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,0,0,0,1,0,1,1
+260,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,0,0,1,0,0,1,1
+261,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,0,0,1,1,0,2,2
+262,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,0,1,0,0,1,0,1
+263,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,0,1,0,1,1,1,2
+264,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,0,1,1,0,1,1,2
+265,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,0,1,1,1,1,2,3
+266,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,1,0,0,0,1,0,1
+267,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,1,0,0,1,1,1,2
+268,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,1,0,1,0,1,1,2
+269,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,1,0,1,1,1,2,3
+270,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,1,1,0,0,2,0,2
+271,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,1,1,0,1,2,1,3
+272,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,1,1,1,0,2,1,3
+273,1,1,Yes,Fiber optic,1,Phone + Internet,0,0,1,1,1,1,2,2,4
+274,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,0,0,0,0,1,0,1
+275,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,0,0,0,1,1,1,2
+276,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,0,0,1,0,1,1,2
+277,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,0,0,1,1,1,2,3
+278,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,0,1,0,0,2,0,2
+279,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,0,1,0,1,2,1,3
+280,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,0,1,1,0,2,1,3
+281,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,0,1,1,1,2,2,4
+282,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,1,0,0,0,2,0,2
+283,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,1,0,0,1,2,1,3
+284,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,1,0,1,0,2,1,3
+285,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,1,0,1,1,2,2,4
+286,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,1,1,0,0,3,0,3
+287,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,1,1,0,1,3,1,4
+288,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,1,1,1,0,3,1,4
+289,1,1,Yes,Fiber optic,1,Phone + Internet,0,1,1,1,1,1,3,2,5
+290,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,0,0,0,0,1,0,1
+291,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,0,0,0,1,1,1,2
+292,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,0,0,1,0,1,1,2
+293,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,0,0,1,1,1,2,3
+294,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,0,1,0,0,2,0,2
+295,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,0,1,0,1,2,1,3
+296,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,0,1,1,0,2,1,3
+297,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,0,1,1,1,2,2,4
+298,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,1,0,0,0,2,0,2
+299,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,1,0,0,1,2,1,3
+300,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,1,0,1,0,2,1,3
+301,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,1,0,1,1,2,2,4
+302,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,1,1,0,0,3,0,3
+303,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,1,1,0,1,3,1,4
+304,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,1,1,1,0,3,1,4
+305,1,1,Yes,Fiber optic,1,Phone + Internet,1,0,1,1,1,1,3,2,5
+306,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,0,0,0,0,2,0,2
+307,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,0,0,0,1,2,1,3
+308,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,0,0,1,0,2,1,3
+309,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,0,0,1,1,2,2,4
+310,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,0,1,0,0,3,0,3
+311,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,0,1,0,1,3,1,4
+312,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,0,1,1,0,3,1,4
+313,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,0,1,1,1,3,2,5
+314,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,1,0,0,0,3,0,3
+315,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,1,0,0,1,3,1,4
+316,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,1,0,1,0,3,1,4
+317,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,1,0,1,1,3,2,5
+318,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,1,1,0,0,4,0,4
+319,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,1,1,0,1,4,1,5
+320,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,1,1,1,0,4,1,5
+321,1,1,Yes,Fiber optic,1,Phone + Internet,1,1,1,1,1,1,4,2,6
+322,1,1,Yes,None,0,Phone only,0,0,0,0,0,0,0,0,0

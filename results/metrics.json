@@ -1,0 +1,198 @@
+{
+ "project": "da-learn-12-telecom-churn",
+ "dataset": "Telco Customer Churn (IBM Sample Data Sets; Kaggle blastchar/telco-customer-churn, licence listed as 'Data files (c) Original Authors'; WA_Fn-UseC_-Telco-Customer-Churn.csv, 7,043 customers x 21 columns, 977,501 B)",
+ "source_mode": "full",
+ "kpis": {
+  "customers": 7043,
+  "churned_customers": 1869,
+  "retained_customers": 5174,
+  "churn_rate_pct": 26.54,
+  "mrr_total": 456116.6,
+  "mrr_lost": 139130.85,
+  "mrr_lost_pct": 30.5,
+  "annualised_revenue_lost": 1669570.2,
+  "avg_monthly_charges": 64.76,
+  "avg_monthly_churned": 74.44,
+  "avg_monthly_retained": 61.27,
+  "avg_tenure_months": 32.4,
+  "median_tenure_churned": 10.0,
+  "median_tenure_retained": 38.0,
+  "lifetime_revenue_total": 16056168.7,
+  "lifetime_revenue_churned": 2862926.9,
+  "avg_lifetime_revenue": 2279.73,
+  "avg_lifetime_revenue_churned": 1531.8,
+  "avg_lifetime_revenue_retained": 2549.91,
+  "month_to_month_pct": 55.02,
+  "churners_on_month_to_month_pct": 88.55,
+  "churners_in_first_year_pct": 55.48,
+  "fiber_pct": 43.96,
+  "senior_pct": 16.21,
+  "new_customers_tenure0": 11,
+  "charges_mismatch_customers": 27
+ },
+ "analysis_tables": [
+  "tables/a_churn_by_contract.csv",
+  "tables/a_churn_by_tenure_band.csv",
+  "tables/a_churn_by_tenure_month.csv",
+  "tables/a_cohort_tenure_contract.csv",
+  "tables/a_churn_by_payment.csv",
+  "tables/a_churn_by_internet.csv",
+  "tables/a_churn_by_paperless.csv",
+  "tables/a_churn_by_charge_band.csv",
+  "tables/a_churn_by_service_profile.csv",
+  "tables/a_churn_by_addon_count.csv",
+  "tables/a_churn_by_household.csv",
+  "tables/a_contract_internet_matrix.csv",
+  "tables/a_churn_by_addon.csv",
+  "tables/a_churn_by_demographics.csv",
+  "tables/a_churn_drivers.csv",
+  "tables/a_risk_segments.csv",
+  "tables/a_revenue_summary.csv",
+  "tables/a_service_adoption.csv",
+  "tables/a_charges_integrity.csv"
+ ],
+ "data_quality": {
+  "row_counts": [
+   {
+    "entity": "customers",
+    "raw_rows": 7043,
+    "distinct_keys": 7043,
+    "clean_rows": 7043,
+    "grain": "customer_id"
+   },
+   {
+    "entity": "fact_subscription",
+    "raw_rows": null,
+    "distinct_keys": null,
+    "clean_rows": 7043,
+    "grain": "customer (current subscription snapshot)"
+   },
+   {
+    "entity": "fact_service",
+    "raw_rows": null,
+    "distinct_keys": null,
+    "clean_rows": 29202,
+    "grain": "customer x subscribed service line"
+   },
+   {
+    "entity": "dim_customer",
+    "raw_rows": null,
+    "distinct_keys": null,
+    "clean_rows": 7043,
+    "grain": "customer_id"
+   },
+   {"entity": "dim_contract", "raw_rows": null, "distinct_keys": 3, "clean_rows": 3, "grain": "contract type"},
+   {"entity": "dim_payment", "raw_rows": null, "distinct_keys": 4, "clean_rows": 4, "grain": "payment method"},
+   {
+    "entity": "dim_demographics",
+    "raw_rows": null,
+    "distinct_keys": null,
+    "clean_rows": 16,
+    "grain": "gender x senior x partner x dependents"
+   },
+   {
+    "entity": "dim_services",
+    "raw_rows": null,
+    "distinct_keys": null,
+    "clean_rows": 322,
+    "grain": "distinct service bundle"
+   },
+   {
+    "entity": "dim_tenure_band",
+    "raw_rows": null,
+    "distinct_keys": null,
+    "clean_rows": 7,
+    "grain": "tenure band"
+   },
+   {
+    "entity": "dim_service",
+    "raw_rows": null,
+    "distinct_keys": null,
+    "clean_rows": 10,
+    "grain": "service line"
+   }
+  ],
+  "null_rates": [
+   {
+    "entity": "stg_telco",
+    "column_name": "TotalCharges (blank string)",
+    "raw_missing_pct": 0.156,
+    "clean_null_pct": 0.0,
+    "treatment": "all blanks have tenure 0 (never billed) -> 0.00, raw blank kept as dq_total_charges_blank"
+   },
+   {
+    "entity": "stg_telco",
+    "column_name": "add-ons = 'No internet service'",
+    "raw_missing_pct": 21.667,
+    "clean_null_pct": 0.0,
+    "treatment": "not missing: a third category; -> flag 0 (has_internet = 0 carries the meaning)"
+   },
+   {
+    "entity": "stg_telco",
+    "column_name": "MultipleLines = 'No phone service'",
+    "raw_missing_pct": 9.683,
+    "clean_null_pct": 0.0,
+    "treatment": "not missing: -> has_multiple_lines 0 (label kept in multiple_lines_label)"
+   },
+   {
+    "entity": "stg_telco",
+    "column_name": "any other column",
+    "raw_missing_pct": 0.0,
+    "clean_null_pct": 0.0,
+    "treatment": "no other missing values in the source"
+   }
+  ],
+  "issues": {
+   "exact duplicate rows in raw file": 0,
+   "duplicate customer_id dropped": 0,
+   "TotalCharges blank string (all tenure = 0) -> 0.00": 11,
+   "SeniorCitizen 0/1 standardised to is_senior + Yes/No label": 7043,
+   "customers with 'No internet service' in the 6 add-on columns -> flags 0": 1526,
+   "MultipleLines 'No phone service' -> has_multiple_lines 0": 682,
+   "InternetService 'No' renamed 'None'": 1526,
+   "TotalCharges off MonthlyCharges x tenure by > 25% (flagged, kept)": 27,
+   "TotalCharges below one MonthlyCharges with tenure >= 1 (flagged, kept)": 0,
+   "identical 19-attribute profile under different customer ids (synthetic data; kept)": 42,
+   "MonthlyCharges outside Q1/Q3 -/+ 1.5*IQR (flagged, kept)": 0,
+   "TotalCharges outside Q1/Q3 -/+ 1.5*IQR (flagged, kept)": 0
+  },
+  "assertions": {
+   "customer_id unique in cln_customers": "PASS",
+   "clean rows = distinct raw customer ids (nothing lost)": "PASS",
+   "fact_subscription rows = cln_customers rows (every dim join matched)": "PASS",
+   "customer_id format NNNN-XXXXX": "PASS",
+   "every Yes/No column mapped to 0/1 (no NULL flags)": "PASS",
+   "SeniorCitizen is 0/1 and gender Female/Male": "PASS",
+   "tenure 0-72 months, MonthlyCharges 18-120": "PASS",
+   "blank TotalCharges only where tenure = 0": "PASS",
+   "every tenure-0 customer had a blank TotalCharges": "PASS",
+   "no NULL total_charges after cleaning": "PASS",
+   "tenure 1: TotalCharges = MonthlyCharges": "PASS",
+   "TotalCharges within 8 x MonthlyCharges of MonthlyCharges x tenure (price-drift tolerance)": "PASS",
+   ">25% charge gaps (dq_charges_mismatch) only in the first year (tenure <= 12)": "PASS",
+   "no internet => all 6 add-on flags 0 and raw add-ons say 'No internet service'": "PASS",
+   "no phone => MultipleLines 'No phone service' and has_multiple_lines 0": "PASS",
+   "every customer has phone or internet": "PASS",
+   "contract / payment / internet values in the expected sets": "PASS",
+   "addon_count = sum of the 6 add-on flags (0-6)": "PASS",
+   "tenure bands cover 0-72 without overlap": "PASS",
+   "MRR reconciles raw -> fact (abs diff < 0.01)": "PASS",
+   "lifetime revenue reconciles raw -> fact (abs diff < 0.01)": "PASS",
+   "churned count reconciles raw Churn = Yes": "PASS",
+   "mrr_lost + mrr_retained = monthly_charges": "PASS",
+   "fact_subscription keys -> dims (contract, payment, demographics, services, tenure band)": "PASS",
+   "fact_service.customer_id -> dim_customer, service -> dim_service": "PASS",
+   "fact_service rows = sum of subscribed flags": "PASS",
+   "segment totals reconcile (contract, tenure band, payment, internet)": "PASS"
+  }
+ },
+ "engine": {"duckdb": "1.5.6", "python": "3.13.5"},
+ "sql_timings_s": {
+  "00_duckdb_compat.sql": 0.001,
+  "01_staging.sql": 0.06,
+  "02_cleaning.sql": 0.049,
+  "03_model.sql": 0.046,
+  "04_analysis.sql": 0.151,
+  "05_quality_checks.sql": 0.039
+ }
+}

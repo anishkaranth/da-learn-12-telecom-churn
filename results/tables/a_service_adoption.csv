@@ -1,0 +1,11 @@
+service_group,service_name,subscribers,adoption_pct,churned,churn_rate_pct
+Internet access,Internet: DSL,2421,34.37,459,18.96
+Internet access,Internet: Fiber optic,3096,43.96,1297,41.89
+Phone,Multiple lines,2971,42.18,850,28.61
+Phone,Phone,6361,90.32,1699,26.71
+Protection / support add-on,Device protection,2422,34.39,545,22.5
+Protection / support add-on,Online backup,2429,34.49,523,21.53
+Protection / support add-on,Online security,2019,28.67,295,14.61
+Protection / support add-on,Tech support,2044,29.02,310,15.17
+Streaming add-on,Streaming TV,2707,38.44,814,30.07
+Streaming add-on,Streaming movies,2732,38.79,818,29.94

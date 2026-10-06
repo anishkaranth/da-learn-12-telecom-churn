@@ -1,0 +1,4 @@
+internet_service,customers,churned,churn_rate_pct,customer_share_pct,churner_share_pct,mrr,mrr_lost,mrr_lost_share_pct,avg_monthly_charges,avg_tenure_months,lifetime_revenue
+DSL,2421,459,18.96,34.37,24.56,140665.35,22529.2,16.19,58.1,32.8,5121410.85
+Fiber optic,3096,1297,41.89,43.96,69.4,283284.4,114300.05,82.15,91.5,32.9,9923622.95
+None,1526,113,7.4,21.67,6.05,32166.85,2301.6,1.65,21.08,30.5,1011134.9

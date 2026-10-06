@@ -1,0 +1,249 @@
+{
+ "snapshot": "headline KPIs + run config",
+ "project": "da-learn-12-telecom-churn",
+ "source_mode": "full",
+ "engine": "duckdb 1.5.6",
+ "config": {
+  "sql_dialect": "Spark SQL style (+ DuckDB shims in sql/00), run on DuckDB",
+  "grain": "fact_subscription = one customer (current subscription snapshot); fact_service = customer x subscribed service",
+  "churn": "Churn = 'Yes' (left within the last month); churn rate = churned / customers",
+  "revenue_at_risk": "sum of MonthlyCharges of churned customers (mrr_lost); x12 = annualised",
+  "lifetime_revenue": "TotalCharges billed to date (CLV-to-date proxy, no margin data)",
+  "cleaning": "TotalCharges ' ' (tenure 0) -> 0.00; SeniorCitizen 0/1 + Yes/No label; Yes/No -> 0/1; 'No internet service' / 'No phone service' -> 0; InternetService 'No' -> 'None'",
+  "integrity_rule": "|TotalCharges - MonthlyCharges x tenure| > 25% of the expected value -> dq_charges_mismatch (kept)",
+  "outlier_rule": "MonthlyCharges / TotalCharges outside Q1/Q3 -/+ 1.5*IQR (flagged, kept)",
+  "sample_rule": "data/raw: crc32(customerID) % 5 = 0 plus every anomaly row (scripts/make_sample.py)"
+ },
+ "headline": {
+  "customers": 7043,
+  "churned_customers": 1869,
+  "retained_customers": 5174,
+  "churn_rate_pct": 26.54,
+  "mrr_total": 456116.6,
+  "mrr_lost": 139130.85,
+  "mrr_lost_pct": 30.5,
+  "annualised_revenue_lost": 1669570.2,
+  "avg_monthly_charges": 64.76,
+  "avg_monthly_churned": 74.44,
+  "avg_monthly_retained": 61.27,
+  "avg_tenure_months": 32.4,
+  "median_tenure_churned": 10.0,
+  "median_tenure_retained": 38.0,
+  "lifetime_revenue_total": 16056168.7,
+  "lifetime_revenue_churned": 2862926.9,
+  "avg_lifetime_revenue": 2279.73,
+  "avg_lifetime_revenue_churned": 1531.8,
+  "avg_lifetime_revenue_retained": 2549.91,
+  "month_to_month_pct": 55.02,
+  "churners_on_month_to_month_pct": 88.55,
+  "churners_in_first_year_pct": 55.48,
+  "fiber_pct": 43.96,
+  "senior_pct": 16.21,
+  "new_customers_tenure0": 11,
+  "charges_mismatch_customers": 27
+ },
+ "contract": [
+  {
+   "contract": "Month-to-month",
+   "customers": 3875,
+   "churned": 1655,
+   "churn_rate_pct": 42.71,
+   "mrr_lost": 120847.1,
+   "mrr_lost_share_pct": 86.86
+  },
+  {
+   "contract": "One year",
+   "customers": 1473,
+   "churned": 166,
+   "churn_rate_pct": 11.27,
+   "mrr_lost": 14118.45,
+   "mrr_lost_share_pct": 10.15
+  },
+  {
+   "contract": "Two year",
+   "customers": 1695,
+   "churned": 48,
+   "churn_rate_pct": 2.83,
+   "mrr_lost": 4165.3,
+   "mrr_lost_share_pct": 2.99
+  }
+ ],
+ "tenure_band": [
+  {"tenure_band": "a 0-6 m", "customers": 1481, "churn_rate_pct": 52.94, "mrr_lost": 49896.1},
+  {"tenure_band": "b 7-12 m", "customers": 705, "churn_rate_pct": 35.89, "mrr_lost": 19058.15},
+  {"tenure_band": "c 13-24 m", "customers": 1024, "churn_rate_pct": 28.71, "mrr_lost": 23081.65},
+  {"tenure_band": "d 25-36 m", "customers": 832, "churn_rate_pct": 21.63, "mrr_lost": 15167.95},
+  {"tenure_band": "e 37-48 m", "customers": 762, "churn_rate_pct": 19.03, "mrr_lost": 12294.55},
+  {"tenure_band": "f 49-60 m", "customers": 832, "churn_rate_pct": 14.42, "mrr_lost": 10581.9},
+  {"tenure_band": "g 61-72 m", "customers": 1407, "churn_rate_pct": 6.61, "mrr_lost": 9050.55}
+ ],
+ "payment": [
+  {"payment_method": "Electronic check", "customers": 2365, "churn_rate_pct": 45.29, "mrr_lost": 84288.75},
+  {"payment_method": "Mailed check", "customers": 1612, "churn_rate_pct": 19.11, "mrr_lost": 16803.6},
+  {
+   "payment_method": "Bank transfer (automatic)",
+   "customers": 1544,
+   "churn_rate_pct": 16.71,
+   "mrr_lost": 20091.9
+  },
+  {
+   "payment_method": "Credit card (automatic)",
+   "customers": 1522,
+   "churn_rate_pct": 15.24,
+   "mrr_lost": 17946.6
+  }
+ ],
+ "internet": [
+  {
+   "internet_service": "Fiber optic",
+   "customers": 3096,
+   "churn_rate_pct": 41.89,
+   "avg_monthly_charges": 91.5,
+   "mrr_lost": 114300.05
+  },
+  {
+   "internet_service": "DSL",
+   "customers": 2421,
+   "churn_rate_pct": 18.96,
+   "avg_monthly_charges": 58.1,
+   "mrr_lost": 22529.2
+  },
+  {
+   "internet_service": "None",
+   "customers": 1526,
+   "churn_rate_pct": 7.4,
+   "avg_monthly_charges": 21.08,
+   "mrr_lost": 2301.6
+  }
+ ],
+ "addons_internet_customers": [
+  {
+   "addon": "Online security",
+   "adoption_pct": 36.6,
+   "churn_rate_with_pct": 14.61,
+   "churn_rate_without_pct": 41.77,
+   "churn_diff_pp": -27.16
+  },
+  {
+   "addon": "Tech support",
+   "adoption_pct": 37.05,
+   "churn_rate_with_pct": 15.17,
+   "churn_rate_without_pct": 41.64,
+   "churn_diff_pp": -26.47
+  },
+  {
+   "addon": "Online backup",
+   "adoption_pct": 44.03,
+   "churn_rate_with_pct": 21.53,
+   "churn_rate_without_pct": 39.93,
+   "churn_diff_pp": -18.4
+  },
+  {
+   "addon": "Device protection",
+   "adoption_pct": 43.9,
+   "churn_rate_with_pct": 22.5,
+   "churn_rate_without_pct": 39.13,
+   "churn_diff_pp": -16.63
+  },
+  {
+   "addon": "Streaming movies",
+   "adoption_pct": 49.52,
+   "churn_rate_with_pct": 29.94,
+   "churn_rate_without_pct": 33.68,
+   "churn_diff_pp": -3.74
+  },
+  {
+   "addon": "Streaming TV",
+   "adoption_pct": 49.07,
+   "churn_rate_with_pct": 30.07,
+   "churn_rate_without_pct": 33.52,
+   "churn_diff_pp": -3.45
+  }
+ ],
+ "demographics": [
+  {"dimension": "Dependents", "value": "No", "customers": 4933, "churn_rate_pct": 31.28},
+  {"dimension": "Dependents", "value": "Yes", "customers": 2110, "churn_rate_pct": 15.45},
+  {"dimension": "Gender", "value": "Female", "customers": 3488, "churn_rate_pct": 26.92},
+  {"dimension": "Gender", "value": "Male", "customers": 3555, "churn_rate_pct": 26.16},
+  {"dimension": "Partner", "value": "No", "customers": 3641, "churn_rate_pct": 32.96},
+  {"dimension": "Partner", "value": "Yes", "customers": 3402, "churn_rate_pct": 19.66},
+  {"dimension": "Senior citizen", "value": "No", "customers": 5901, "churn_rate_pct": 23.61},
+  {"dimension": "Senior citizen", "value": "Yes", "customers": 1142, "churn_rate_pct": 41.68}
+ ],
+ "top_risk_segments": [
+  {
+   "contract": "Month-to-month",
+   "internet_service": "Fiber optic",
+   "payment_method": "Electronic check",
+   "customers": 1307,
+   "churn_rate_pct": 60.37,
+   "mrr_lost": 68281.5
+  },
+  {
+   "contract": "Month-to-month",
+   "internet_service": "Fiber optic",
+   "payment_method": "Mailed check",
+   "customers": 201,
+   "churn_rate_pct": 50.75,
+   "mrr_lost": 8407.25
+  },
+  {
+   "contract": "Month-to-month",
+   "internet_service": "Fiber optic",
+   "payment_method": "Bank transfer (automatic)",
+   "customers": 327,
+   "churn_rate_pct": 45.57,
+   "mrr_lost": 13062.1
+  },
+  {
+   "contract": "Month-to-month",
+   "internet_service": "Fiber optic",
+   "payment_method": "Credit card (automatic)",
+   "customers": 293,
+   "churn_rate_pct": 41.64,
+   "mrr_lost": 10731.15
+  },
+  {
+   "contract": "Month-to-month",
+   "internet_service": "DSL",
+   "payment_method": "Electronic check",
+   "customers": 474,
+   "churn_rate_pct": 40.51,
+   "mrr_lost": 8776.45
+  }
+ ],
+ "churned_vs_retained": [
+  {
+   "status": "Churned",
+   "customers": 1869,
+   "mrr": 139130.85,
+   "mrr_share_pct": 30.5,
+   "avg_monthly_charges": 74.44,
+   "median_monthly_charges": 79.65,
+   "avg_tenure_months": 18.0,
+   "median_tenure_months": 10.0,
+   "lifetime_revenue": 2862926.9,
+   "avg_lifetime_revenue": 1531.8,
+   "median_lifetime_revenue": 703.55,
+   "avg_addons": 1.77,
+   "annualised_mrr": 1669570.2
+  },
+  {
+   "status": "Retained",
+   "customers": 5174,
+   "mrr": 316985.75,
+   "mrr_share_pct": 69.5,
+   "avg_monthly_charges": 61.27,
+   "median_monthly_charges": 64.42,
+   "avg_tenure_months": 37.6,
+   "median_tenure_months": 38.0,
+   "lifetime_revenue": 13193241.8,
+   "avg_lifetime_revenue": 2549.91,
+   "median_lifetime_revenue": 1679.52,
+   "avg_addons": 2.14,
+   "annualised_mrr": 3803829.0
+  }
+ ],
+ "assertions_passed": 27,
+ "assertions_total": 27
+}

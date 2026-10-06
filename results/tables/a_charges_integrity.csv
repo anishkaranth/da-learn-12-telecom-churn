@@ -1,0 +1,7 @@
+ratio_band,customers,churned,churn_rate_pct,avg_tenure_months
+a not billed yet (tenure 0),11,0,0.0,0.0
+b < 0.75 (flag),8,4,50.0,3.4
+c 0.75-0.95,689,192,27.87,17.1
+d 0.95-1.05,5654,1495,26.44,36.1
+e 1.05-1.25,662,173,26.13,17.8
+f > 1.25 (flag),19,5,26.32,3.4

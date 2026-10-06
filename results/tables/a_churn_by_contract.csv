@@ -1,0 +1,4 @@
+contract,contract_term_months,customers,churned,churn_rate_pct,customer_share_pct,churner_share_pct,mrr,mrr_lost,mrr_lost_share_pct,avg_monthly_charges,avg_tenure_months,lifetime_revenue
+Month-to-month,1,3875,1655,42.71,55.02,88.55,257294.15,120847.1,86.86,66.4,18.0,5305861.5
+One year,12,1473,166,11.27,20.91,8.88,95816.6,14118.45,10.15,65.05,42.0,4467053.5
+Two year,24,1695,48,2.83,24.07,2.57,103005.85,4165.3,2.99,60.77,56.7,6283253.7

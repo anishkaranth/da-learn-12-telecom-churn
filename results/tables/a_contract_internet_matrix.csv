@@ -1,0 +1,10 @@
+contract,internet_service,customers,churned,churn_rate_pct,customer_share_pct,churner_share_pct,mrr,mrr_lost,mrr_lost_share_pct,avg_monthly_charges,avg_tenure_months,lifetime_revenue
+Month-to-month,DSL,1223,394,32.22,17.36,21.08,61418.45,18367.25,13.2,50.22,15.7,1015136.2
+Month-to-month,Fiber optic,2128,1162,54.61,30.21,62.17,185181.1,100482.0,72.22,87.02,21.6,4191552.55
+Month-to-month,None,524,99,18.89,7.44,5.3,10694.6,1997.85,1.44,20.41,9.1,99172.75
+One year,DSL,570,53,9.3,8.09,2.84,34996.15,3356.25,2.41,61.4,40.5,1439990.85
+One year,Fiber optic,539,104,19.29,7.65,5.56,53242.15,10571.95,7.6,98.78,52.1,2800424.35
+One year,None,364,9,2.47,5.17,0.48,7578.3,190.25,0.14,20.82,29.6,226638.3
+Two year,DSL,628,12,1.91,8.92,0.64,44250.75,805.7,0.58,70.46,59.1,2666283.8
+Two year,Fiber optic,429,31,7.23,6.09,1.66,44861.15,3246.1,2.33,104.57,65.2,2931646.05
+Two year,None,638,5,0.78,9.06,0.27,13893.95,113.5,0.08,21.78,48.7,685323.85

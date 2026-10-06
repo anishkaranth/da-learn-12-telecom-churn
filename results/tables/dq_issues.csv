@@ -1,0 +1,13 @@
+check_name,affected_rows
+InternetService 'No' renamed 'None',1526
+"MonthlyCharges outside Q1/Q3 -/+ 1.5*IQR (flagged, kept)",0
+MultipleLines 'No phone service' -> has_multiple_lines 0,682
+SeniorCitizen 0/1 standardised to is_senior + Yes/No label,7043
+"TotalCharges below one MonthlyCharges with tenure >= 1 (flagged, kept)",0
+TotalCharges blank string (all tenure = 0) -> 0.00,11
+"TotalCharges off MonthlyCharges x tenure by > 25% (flagged, kept)",27
+"TotalCharges outside Q1/Q3 -/+ 1.5*IQR (flagged, kept)",0
+customers with 'No internet service' in the 6 add-on columns -> flags 0,1526
+duplicate customer_id dropped,0
+exact duplicate rows in raw file,0
+identical 19-attribute profile under different customer ids (synthetic data; kept),42

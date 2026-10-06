@@ -1,0 +1,5 @@
+entity,column_name,raw_missing_pct,clean_null_pct,treatment
+stg_telco,MultipleLines = 'No phone service',9.683,0.0,not missing: -> has_multiple_lines 0 (label kept in multiple_lines_label)
+stg_telco,TotalCharges (blank string),0.156,0.0,"all blanks have tenure 0 (never billed) -> 0.00, raw blank kept as dq_total_charges_blank"
+stg_telco,add-ons = 'No internet service',21.667,0.0,not missing: a third category; -> flag 0 (has_internet = 0 carries the meaning)
+stg_telco,any other column,0.0,0.0,no other missing values in the source

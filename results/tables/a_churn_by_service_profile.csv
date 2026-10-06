@@ -1,0 +1,4 @@
+service_profile,customers,churned,churn_rate_pct,customer_share_pct,churner_share_pct,mrr,mrr_lost,mrr_lost_share_pct,avg_monthly_charges,avg_tenure_months,lifetime_revenue
+Internet only,682,170,24.93,9.68,9.1,28663.5,6380.75,4.59,42.03,31.7,1020294.95
+Phone + Internet,4835,1586,32.8,68.65,84.86,395286.25,130448.5,93.76,81.76,33.0,14024738.85
+Phone only,1526,113,7.4,21.67,6.05,32166.85,2301.6,1.65,21.08,30.5,1011134.9

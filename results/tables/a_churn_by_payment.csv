@@ -1,0 +1,5 @@
+payment_method,is_auto_pay,customers,churned,churn_rate_pct,customer_share_pct,churner_share_pct,mrr,mrr_lost,mrr_lost_share_pct,avg_monthly_charges,avg_tenure_months,lifetime_revenue
+Bank transfer (automatic),1,1544,258,16.71,21.92,13.8,103745.45,20091.9,14.44,67.19,43.7,4748279.9
+Credit card (automatic),1,1522,232,15.24,21.61,12.41,101231.85,17946.6,12.9,66.51,43.3,4671593.35
+Electronic check,0,2365,1071,45.29,33.58,57.3,180345.0,84288.75,60.58,76.26,25.2,4944903.25
+Mailed check,0,1612,308,19.11,22.89,16.48,70794.3,16803.6,12.08,43.92,21.8,1691392.2

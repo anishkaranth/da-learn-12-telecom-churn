@@ -1,0 +1,7 @@
+data/raw_full/
+data/orig/
+data/clean/star/
+results/sample/
+__pycache__/
+*.duckdb
+.venv/

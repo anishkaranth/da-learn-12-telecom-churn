@@ -1,0 +1,26 @@
+contract,internet_service,payment_method,customers,churned,churn_rate_pct,mrr_lost,mrr_lost_share_pct,avg_tenure_months,risk_rank
+Month-to-month,DSL,Bank transfer (automatic),197,39,19.8,1823.9,1.31,22.4,10
+Month-to-month,DSL,Credit card (automatic),185,50,27.03,2474.8,1.78,21.0,7
+Month-to-month,DSL,Electronic check,474,192,40.51,8776.45,6.31,14.9,5
+Month-to-month,DSL,Mailed check,367,113,30.79,5292.1,3.8,10.6,6
+Month-to-month,Fiber optic,Bank transfer (automatic),327,149,45.57,13062.1,9.39,28.8,3
+Month-to-month,Fiber optic,Credit card (automatic),293,122,41.64,10731.15,7.71,28.5,4
+Month-to-month,Fiber optic,Electronic check,1307,789,60.37,68281.5,49.08,19.4,1
+Month-to-month,Fiber optic,Mailed check,201,102,50.75,8407.25,6.04,13.9,2
+Month-to-month,None,Mailed check,325,67,20.62,1345.05,0.97,7.1,9
+One year,DSL,Bank transfer (automatic),145,11,7.59,696.75,0.5,45.9,17
+One year,DSL,Credit card (automatic),172,17,9.88,1133.0,0.81,42.6,14
+One year,DSL,Electronic check,116,11,9.48,631.85,0.45,40.0,15
+One year,DSL,Mailed check,137,14,10.22,894.65,0.64,32.6,13
+One year,Fiber optic,Bank transfer (automatic),157,23,14.65,2344.35,1.68,51.8,12
+One year,Fiber optic,Credit card (automatic),150,23,15.33,2392.35,1.72,54.7,11
+One year,Fiber optic,Electronic check,196,51,26.02,5149.65,3.7,51.8,8
+One year,None,Mailed check,164,2,1.22,39.6,0.03,23.0,21
+Two year,DSL,Bank transfer (automatic),224,3,1.34,212.9,0.15,62.3,20
+Two year,DSL,Credit card (automatic),237,5,2.11,361.7,0.26,61.1,19
+Two year,DSL,Mailed check,109,0,0.0,0.0,0.0,47.1,25
+Two year,Fiber optic,Bank transfer (automatic),162,15,9.26,1580.15,1.14,66.2,16
+Two year,Fiber optic,Credit card (automatic),154,6,3.9,655.2,0.47,66.4,18
+Two year,None,Bank transfer (automatic),178,1,0.56,19.75,0.01,56.6,24
+Two year,None,Credit card (automatic),190,2,1.05,49.9,0.04,52.8,22
+Two year,None,Mailed check,252,2,0.79,43.85,0.03,39.8,23

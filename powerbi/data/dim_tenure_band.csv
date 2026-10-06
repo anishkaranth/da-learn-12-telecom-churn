@@ -1,0 +1,8 @@
+tenure_band,min_tenure_months,max_tenure_months,first_tenure_year
+a 0-6 m,0,6,Y1 0-12
+b 7-12 m,7,12,Y1 0-12
+c 13-24 m,13,24,Y2 13-24
+d 25-36 m,25,36,Y3 25-36
+e 37-48 m,37,48,Y4 37-48
+f 49-60 m,49,60,Y5 49-60
+g 61-72 m,61,72,Y6 61-72

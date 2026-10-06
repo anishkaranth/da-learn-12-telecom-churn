@@ -1,0 +1,3 @@
+status,customers,mrr,mrr_share_pct,avg_monthly_charges,median_monthly_charges,avg_tenure_months,median_tenure_months,lifetime_revenue,avg_lifetime_revenue,median_lifetime_revenue,avg_addons,annualised_mrr
+Churned,1869,139130.85,30.5,74.44,79.65,18.0,10.0,2862926.9,1531.8,703.55,1.77,1669570.2
+Retained,5174,316985.75,69.5,61.27,64.42,37.6,38.0,13193241.8,2549.91,1679.52,2.14,3803829.0
